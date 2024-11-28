@@ -1,8 +1,5 @@
 import streamlit as st
-import os
-os.system("pip install networkx")
-import networkx as nx
-import matplotlib.pyplot as plt
+
 
 
 # Basisklasse für Konzepte
@@ -118,7 +115,8 @@ if main_concept:
             st.write("Keine oberen Nachbarn gefunden.")
 
 ###############################################################################################
-
+import networkx as nx
+import matplotlib.pyplot as plt
 
 def visualize_neighbors_centered(original_concept, neighbors):
     """
